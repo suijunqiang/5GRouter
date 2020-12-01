@@ -1,0 +1,2 @@
+/home/sui/sdx55-sdk-installed/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ar qc ../../../build/lib/libwrapper.a  CMakeFiles/wrapper.dir/entropy_hardware_alt.c.o CMakeFiles/wrapper.dir/net_sockets_alt.c.o CMakeFiles/wrapper.dir/timing_alt.c.o
+/home/sui/sdx55-sdk-installed/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ranlib ../../../build/lib/libwrapper.a

@@ -1,0 +1,1211 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/vip/mqtt/mqttclient-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cc482/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cc482.dir/build.make CMakeFiles/cmTC_cc482.dir/build
+make[1]: Entering directory '/home/vip/mqtt/mqttclient-master/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cc482.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -lpthread    -o CMakeFiles/cmTC_cc482.dir/CheckSymbolExists.c.o   -c /home/vip/mqtt/mqttclient-master/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cc482
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc482.dir/link.txt --verbose=1
+/usr/bin/gcc  -lpthread     CMakeFiles/cmTC_cc482.dir/CheckSymbolExists.c.o  -o cmTC_cc482 -rdynamic 
+CMakeFiles/cmTC_cc482.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cc482.dir/build.make:97: recipe for target 'cmTC_cc482' failed
+make[1]: *** [cmTC_cc482] Error 1
+make[1]: Leaving directory '/home/vip/mqtt/mqttclient-master/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cc482/fast' failed
+make: *** [cmTC_cc482/fast] Error 2
+
+File /home/vip/mqtt/mqttclient-master/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/vip/mqtt/mqttclient-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4c3d2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4c3d2.dir/build.make CMakeFiles/cmTC_4c3d2.dir/build
+make[1]: Entering directory '/home/vip/mqtt/mqttclient-master/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4c3d2.dir/CheckFunctionExists.c.o
+/usr/bin/gcc    -lpthread -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4c3d2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4c3d2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c3d2.dir/link.txt --verbose=1
+/usr/bin/gcc  -lpthread -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_4c3d2.dir/CheckFunctionExists.c.o  -o cmTC_4c3d2 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4c3d2.dir/build.make:97: recipe for target 'cmTC_4c3d2' failed
+make[1]: *** [cmTC_4c3d2] Error 1
+make[1]: Leaving directory '/home/vip/mqtt/mqttclient-master/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4c3d2/fast' failed
+make: *** [cmTC_4c3d2/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/vip/mqtt/mqttclient-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_46c1b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_46c1b.dir/build.make CMakeFiles/cmTC_46c1b.dir/build
+make[1]: Entering directory '/home/vip/mqtt/mqttclient-master/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_46c1b.dir/testCCompiler.c.o
+/usr/bin/gcc --sysroot=/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi   -O2 -fomit-frame-pointer    -Wa,--noexecstack -fexpensive-optimizations   -frename-registers -ftree-vectorize   -finline-functions -finline-limit=64   -Wno-error=maybe-uninitialized -Wno-error=unused-result     -DTARGET_ION_ABI_VERSION=2     -o CMakeFiles/cmTC_46c1b.dir/testCCompiler.c.o   -c /home/vip/mqtt/mqttclient-master/build/CMakeFiles/CMakeTmp/testCCompiler.c
+In file included from <command-line>:0:0:
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:1: error: stray â€˜\24â€™ in program
+ b#ek •   E-SafeNet   LOCK            7ÁÊ<íZg¯‰Ë~ë;/+"Fsuyqpr,5Q8                                   Şb mXs¹îJ^×gmGğ@O]rŠ5wÂ{¥%ù ÉƒÄğ6^eGíÅô¢˜İ4GláDï'ïÓ [ršÃ&Î¹`c&GÅƒ˜‹ê¬VªEÜ®)?ŸÏ¸İ™‰Ï|øiæJÓöò/‘—ñah<uh?¦ Î_øQªò“ŒüÖÇ5×A„3§uÛ, ±ÆF*)?Ò¤Œì>fœoèb¹£×³.œ6\|”=W£„§à!ú‰ @G×ƒ/Ç#O½ÅDIÌ…ÓÅÁ_TcSÁÏÄ¡ù²êxé¢AB1½µÚ<ÿË_§PÍıœ Öš}¾ø¥}¦2èvI™N\`©¿p´>$‰hİHÿİÒÃr¾÷£„à€ù§T…Í+cçÎ ıi9Ö½`K
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:3: error: stray â€˜#â€™ in program
+ b#ek •   E-SafeNet   LOCK            7ÁÊ<íZg¯‰Ë~ë;/+"Fsuyqpr,5Q8                                   Şb mXs¹îJ^×gmGğ@O]rŠ5wÂ{¥%ù ÉƒÄğ6^eGíÅô¢˜İ4GláDï'ïÓ [ršÃ&Î¹`c&GÅƒ˜‹ê¬VªEÜ®)?ŸÏ¸İ™‰Ï|øiæJÓöò/‘—ñah<uh?¦ Î_øQªò“ŒüÖÇ5×A„3§uÛ, ±ÆF*)?Ò¤Œì>fœoèb¹£×³.œ6\|”=W£„§à!ú‰ @G×ƒ/Ç#O½ÅDIÌ…ÓÅÁ_TcSÁÏÄ¡ù²êxé¢AB1½µÚ<ÿË_§PÍıœ Öš}¾ø¥}¦2èvI™N\`©¿p´>$‰hİHÿİÒÃr¾÷£„à€ù§T…Í+cçÎ ıi9Ö½`K
+   ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:1: error: unknown type name â€˜bâ€™
+ b#ek •   E-SafeNet   LOCK            7ÁÊ<íZg¯‰Ë~ë;/+"Fsuyqpr,5Q8                                   Şb mXs¹îJ^×gmGğ@O]rŠ5wÂ{¥%ù ÉƒÄğ6^eGíÅô¢˜İ4GláDï'ïÓ [ršÃ&Î¹`c&GÅƒ˜‹ê¬VªEÜ®)?ŸÏ¸İ™‰Ï|øiæJÓöò/‘—ñah<uh?¦ Î_øQªò“ŒüÖÇ5×A„3§uÛ, ±ÆF*)?Ò¤Œì>fœoèb¹£×³.œ6\|”=W£„§à!ú‰ @G×ƒ/Ç#O½ÅDIÌ…ÓÅÁ_TcSÁÏÄ¡ù²êxé¢AB1½µÚ<ÿË_§PÍıœ Öš}¾ø¥}¦2èvI™N\`©¿p´>$‰hİHÿİÒÃr¾÷£„à€ù§T…Í+cçÎ ıi9Ö½`K
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:1: error: stray â€˜\225â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:1: error: stray â€˜\1â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:1: error: stray â€˜\1â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:13: error: expected â€˜=â€™, â€˜,â€™, â€˜;â€™, â€˜asmâ€™ or â€˜__attribute__â€™ before â€˜Eâ€™
+ b#ek •   E-SafeNet   LOCK            7ÁÊ<íZg¯‰Ë~ë;/+"Fsuyqpr,5Q8                                   Şb mXs¹îJ^×gmGğ@O]rŠ5wÂ{¥%ù ÉƒÄğ6^eGíÅô¢˜İ4GláDï'ïÓ [ršÃ&Î¹`c&GÅƒ˜‹ê¬VªEÜ®)?ŸÏ¸İ™‰Ï|øiæJÓöò/‘—ñah<uh?¦ Î_øQªò“ŒüÖÇ5×A„3§uÛ, ±ÆF*)?Ò¤Œì>fœoèb¹£×³.œ6\|”=W£„§à!ú‰ @G×ƒ/Ç#O½ÅDIÌ…ÓÅÁ_TcSÁÏÄ¡ù²êxé¢AB1½µÚ<ÿË_§PÍıœ Öš}¾ø¥}¦2èvI™N\`©¿p´>$‰hİHÿİÒÃr¾÷£„à€ù§T…Í+cçÎ ıi9Ö½`K
+             ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:13: error: stray â€˜\301â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:13: error: stray â€˜\312â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:13: error: stray â€˜\33â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:13: error: stray â€˜\355â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:13: error: stray â€˜\257â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:13: error: stray â€˜\211â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:13: error: stray â€˜\313â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:13: error: stray â€˜\353â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:13: error: stray â€˜\5â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:13: error: stray â€˜\220â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:57: error: expected identifier or â€˜(â€™ before â€˜/â€™ token
+ b#ek •   E-SafeNet   LOCK            7ÁÊ<íZg¯‰Ë~ë;/+"Fsuyqpr,5Q8                                   Şb mXs¹îJ^×gmGğ@O]rŠ5wÂ{¥%ù ÉƒÄğ6^eGíÅô¢˜İ4GláDï'ïÓ [ršÃ&Î¹`c&GÅƒ˜‹ê¬VªEÜ®)?ŸÏ¸İ™‰Ï|øiæJÓöò/‘—ñah<uh?¦ Î_øQªò“ŒüÖÇ5×A„3§uÛ, ±ÆF*)?Ò¤Œì>fœoèb¹£×³.œ6\|”=W£„§à!ú‰ @G×ƒ/Ç#O½ÅDIÌ…ÓÅÁ_TcSÁÏÄ¡ù²êxé¢AB1½µÚ<ÿË_§PÍıœ Öš}¾ø¥}¦2èvI™N\`©¿p´>$‰hİHÿİÒÃr¾÷£„à€ù§T…Í+cçÎ ıi9Ö½`K
+                                                         ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:1:57: error: missing terminating " character
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:2:1: error: stray â€˜\341â€™ in program
+ ëˆï‚aÇÛ÷ÓˆfBÔãäùÎgæI„°ËEnĞ}uÍ“]Û)NC–±“}ü ¿æGîjMúØ ÖW¶ ÏÂIÖ»‹àr÷{ŠìFÒa=f–€s}o‡ñ¨LËy£WV`¦ÔŒŸKkz-jC‡Îyoƒ(7$Ÿ)**èKe´Ï%şRü§¶÷{D|(Í€„±¥ø:c6¨ÒnªººP9°¤H»ç(*u+ßƒÊÂ0¯²RªP]˜L?;“Œßß¥G4Ç7Ã]höi¿G/–ÿ0Jˆğş\Ln[sF°›ó¼·Ÿ„ùÇ••2ÆMWˆ#§u•+à®ÍMLE$Ş¨ÊÒ1¾Vãtû”æÆ¸9ƒ$¸ÅH6¡¯”Ş¥sú‚M[ÅŠ/ö:B¿ËÎG'±&ÌÄÈÊvg’lŸøÊwø»ıeòF²³jEêÊÁoÿÇ!ïyÎü"Ç˜4ø¸¼*ã2K÷>ÒA_{êF°w¹åh‡'RKÜŞÚËeúş¤ùÚ¡'ãwC «% õÈN…N´Ÿ¼u'uÌ´ÿË1şı’à¤L1*¿·Î†’( h€õÀ|²~dŸä}üArs²ğ 54R
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:2:1: error: stray â€˜\357â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:2:1: error: missing terminating ' character
+In file included from <command-line>:0:0:
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\353â€™ in program
+ Û)‚Ê)ÜVŞ¨ÔÇL÷½›‘Ç{ã”Uê~Ÿ LØhmk€2pz­¾îf‚7àvfÃô#0¨ˆ© äòğÿ£èCŸ2–Ï°ğö2¶™³ÀİfÌ¸oÓ†æˆ¾º±=^O4@è‰­à¹‚Ãº‹Ç2ÒËÒ†9‰Šh{2´oo ûbz9Ó9ğ°|Ù‡Ëº£×³J‹LŠSşA‰»½)oW@k¿§DXÀ+0`¼tDk›$#—+épÍßÈŒyZtSêÓ±ÄƒÀ?IOuøGèh¦îîQ2ósŠˆ(i:
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\210â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\357â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\202â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\307â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\333â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\367â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\323â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\210â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\2â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\324â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\343â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\344â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\371â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\316â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\346â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\204â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\260â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\313â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\320â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\315â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:1: error: stray â€˜\223â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: expected â€˜=â€™, â€˜,â€™, â€˜;â€™, â€˜asmâ€™ or â€˜__attribute__â€™ before â€˜]â€™ token
+ Û)‚Ê)ÜVŞ¨ÔÇL÷½›‘Ç{ã”Uê~Ÿ LØhmk€2pz­¾îf‚7àvfÃô#0¨ˆ© äòğÿ£èCŸ2–Ï°ğö2¶™³ÀİfÌ¸oÓ†æˆ¾º±=^O4@è‰­à¹‚Ãº‹Ç2ÒËÒ†9‰Šh{2´oo ûbz9Ó9ğ°|Ù‡Ëº£×³J‹LŠSşA‰»½)oW@k¿§DXÀ+0`¼tDk›$#—+épÍßÈŒyZtSêÓ±ÄƒÀ?IOuøGèh¦îîQ2ósŠˆ(i:
+                                 ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\333â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\226â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\261â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\223â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\32â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\31â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\27â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\374â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\277â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\346â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\356â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:49: error: unknown type name â€˜Gâ€™
+ Û)‚Ê)ÜVŞ¨ÔÇL÷½›‘Ç{ã”Uê~Ÿ LØhmk€2pz­¾îf‚7àvfÃô#0¨ˆ© äòğÿ£èCŸ2–Ï°ğö2¶™³ÀİfÌ¸oÓ†æˆ¾º±=^O4@è‰­à¹‚Ãº‹Ç2ÒËÒ†9‰Šh{2´oo ûbz9Ó9ğ°|Ù‡Ëº£×³J‹LŠSşA‰»½)oW@k¿§DXÀ+0`¼tDk›$#—+épÍßÈŒyZtSêÓ±ÄƒÀ?IOuøGèh¦îîQ2ósŠˆ(i:
+                                                 ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\372â€™ in program
+ Û)‚Ê)ÜVŞ¨ÔÇL÷½›‘Ç{ã”Uê~Ÿ LØhmk€2pz­¾îf‚7àvfÃô#0¨ˆ© äòğÿ£èCŸ2–Ï°ğö2¶™³ÀİfÌ¸oÓ†æˆ¾º±=^O4@è‰­à¹‚Ãº‹Ç2ÒËÒ†9‰Šh{2´oo ûbz9Ó9ğ°|Ù‡Ëº£×³J‹LŠSşA‰»½)oW@k¿§DXÀ+0`¼tDk›$#—+épÍßÈŒyZtSêÓ±ÄƒÀ?IOuøGèh¦îîQ2ósŠˆ(i:
+                                 ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\330â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\240â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:33: error: stray â€˜\326â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: expected â€˜=â€™, â€˜,â€™, â€˜;â€™, â€˜asmâ€™ or â€˜__attribute__â€™ before â€˜Wâ€™
+ Û)‚Ê)ÜVŞ¨ÔÇL÷½›‘Ç{ã”Uê~Ÿ LØhmk€2pz­¾îf‚7àvfÃô#0¨ˆ© äòğÿ£èCŸ2–Ï°ğö2¶™³ÀİfÌ¸oÓ†æˆ¾º±=^O4@è‰­à¹‚Ãº‹Ç2ÒËÒ†9‰Šh{2´oo ûbz9Ó9ğ°|Ù‡Ëº£×³J‹LŠSşA‰»½)oW@k¿§DXÀ+0`¼tDk›$#—+épÍßÈŒyZtSêÓ±ÄƒÀ?IOuøGèh¦îîQ2ósŠˆ(i:
+                                                         ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\266â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\240â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\317â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\302â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\26â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: unknown type name â€˜Wâ€™
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\326â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\273â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\213â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\340â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\367â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\212â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\354â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\322â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\3â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\226â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\200â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\32â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\207â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\361â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\250â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:83: error: unknown type name â€˜oâ€™
+ Û)‚Ê)ÜVŞ¨ÔÇL÷½›‘Ç{ã”Uê~Ÿ LØhmk€2pz­¾îf‚7àvfÃô#0¨ˆ© äòğÿ£èCŸ2–Ï°ğö2¶™³ÀİfÌ¸oÓ†æˆ¾º±=^O4@è‰­à¹‚Ãº‹Ç2ÒËÒ†9‰Šh{2´oo ûbz9Ó9ğ°|Ù‡Ëº£×³J‹LŠSşA‰»½)oW@k¿§DXÀ+0`¼tDk›$#—+épÍßÈŒyZtSêÓ±ÄƒÀ?IOuøGèh¦îîQ2ósŠˆ(i:
+                                                                                   ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:57: error: stray â€˜\313â€™ in program
+ Û)‚Ê)ÜVŞ¨ÔÇL÷½›‘Ç{ã”Uê~Ÿ LØhmk€2pz­¾îf‚7àvfÃô#0¨ˆ© äòğÿ£èCŸ2–Ï°ğö2¶™³ÀİfÌ¸oÓ†æˆ¾º±=^O4@è‰­à¹‚Ãº‹Ç2ÒËÒ†9‰Šh{2´oo ûbz9Ó9ğ°|Ù‡Ëº£×³J‹LŠSşA‰»½)oW@k¿§DXÀ+0`¼tDk›$#—+épÍßÈŒyZtSêÓ±ÄƒÀ?IOuøGèh¦îîQ2ósŠˆ(i:
+                                                         ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: expected â€˜=â€™, â€˜,â€™, â€˜;â€™, â€˜asmâ€™ or â€˜__attribute__â€™ before â€˜yâ€™
+ Û)‚Ê)ÜVŞ¨ÔÇL÷½›‘Ç{ã”Uê~Ÿ LØhmk€2pz­¾îf‚7àvfÃô#0¨ˆ© äòğÿ£èCŸ2–Ï°ğö2¶™³ÀİfÌ¸oÓ†æˆ¾º±=^O4@è‰­à¹‚Ãº‹Ç2ÒËÒ†9‰Šh{2´oo ûbz9Ó9ğ°|Ù‡Ëº£×³J‹LŠSşA‰»½)oW@k¿§DXÀ+0`¼tDk›$#—+épÍßÈŒyZtSêÓ±ÄƒÀ?IOuøGèh¦îîQ2ósŠˆ(i:
+                                                                                          ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\243â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: unknown type name â€˜yâ€™
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜`â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\246â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\324â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\214â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\237â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\5â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\207â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\316â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\203â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:112: error: invalid suffix "$" on integer constant
+ Û)‚Ê)ÜVŞ¨ÔÇL÷½›‘Ç{ã”Uê~Ÿ LØhmk€2pz­¾îf‚7àvfÃô#0¨ˆ© äòğÿ£èCŸ2–Ï°ğö2¶™³ÀİfÌ¸oÓ†æˆ¾º±=^O4@è‰­à¹‚Ãº‹Ç2ÒËÒ†9‰Šh{2´oo ûbz9Ó9ğ°|Ù‡Ëº£×³J‹LŠSşA‰»½)oW@k¿§DXÀ+0`¼tDk›$#—+épÍßÈŒyZtSêÓ±ÄƒÀ?IOuøGèh¦îîQ2ósŠˆ(i:
+                                                                                                                ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\237â€™ in program
+ Û)‚Ê)ÜVŞ¨ÔÇL÷½›‘Ç{ã”Uê~Ÿ LØhmk€2pz­¾îf‚7àvfÃô#0¨ˆ© äòğÿ£èCŸ2–Ï°ğö2¶™³ÀİfÌ¸oÓ†æˆ¾º±=^O4@è‰­à¹‚Ãº‹Ç2ÒËÒ†9‰Šh{2´oo ûbz9Ó9ğ°|Ù‡Ëº£×³J‹LŠSşA‰»½)oW@k¿§DXÀ+0`¼tDk›$#—+épÍßÈŒyZtSêÓ±ÄƒÀ?IOuøGèh¦îîQ2ósŠˆ(i:
+                                                                                          ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\16â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\350â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\264â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\5â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\317â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\376â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\374â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\247â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\266â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\367â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\20â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\315â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\200â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\204â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\261â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\245â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\370â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\25â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\250â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\322â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\252â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\272â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\272â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\260â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\244â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\273â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\347â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\26â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:3:90: error: stray â€˜\337â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\203â€™ in program
+ ß^„İ„¸¹¹_…]®\<#š™ìqİ!Õ .ôzüX/Ó«<Nˆ±úR$6y¶Ş»Q¹·„ŠúĞÖ‚wÊHDÍ%ârÚ:êşİFL"Å¹àµrDûbönàÀÍÚö5Ÿ&íñX'í§×§ü ®«P×‹jåxñë­sn® ƒÇÓXY&ÜNÒÑƒzìúût ÑõjíÛĞ…yè‚B¡6€ğ3ÁÈz¸·»/ñuB€îU)•G<©ô+Öœ|‰`ÁP"ñ“Äeêş¬„¥›ªC'ÓbŸ‰Øô´‰Nò¿—SªÙ›åÚÇ÷Â”dßéªíÑkôEÄ¼Á9» XÍ¥zëAby¯á¾18
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\312â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\302â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\257â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\262â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\252â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\220â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\230â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\223â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\214â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\337â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\337â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\245â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\307â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\303â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\366â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:4:1: error: stray â€˜\277â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\226â€™ in program
+ ‹‡}ÒVVíå‚íû‚ÂQ×3îûdÓ _Å`yaœww;Æı¼)˜S£:3Ö±)-î˜­>ï»ğùºô‘›4–Ò¶á³/¶Ø Æ˜)ËÈ¼pÚ•ıÄ¸ùü8DFuCæİâ‰©I›ÓŸ
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\377â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\210â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\360â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\376â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\31â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\36â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\34â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\260â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\23â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\233â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\363â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\22â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\20â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\35â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\274â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\267â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\237â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\204â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\371â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\307â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\225â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\225â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\27â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\306â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\210â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:39: error: stray â€˜#â€™ in program
+ ‹‡}ÒVVíå‚íû‚ÂQ×3îûdÓ _Å`yaœww;Æı¼)˜S£:3Ö±)-î˜­>ï»ğùºô‘›4–Ò¶á³/¶Ø Æ˜)ËÈ¼pÚ•ıÄ¸ùü8DFuCæİâ‰©I›ÓŸ
+                                       ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\247â€™ in program
+ ‹‡}ÒVVíå‚íû‚ÂQ×3îûdÓ _Å`yaœww;Æı¼)˜S£:3Ö±)-î˜­>ï»ğùºô‘›4–Ò¶á³/¶Ø Æ˜)ËÈ¼pÚ•ıÄ¸ùü8DFuCæİâ‰©I›ÓŸ
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\225â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\340â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\256â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\315â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\22â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\336â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\250â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\312â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\322â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\34â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\276â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\343â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\5â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\373â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\224â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\346â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\306â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\270â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\203â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\32â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\270â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\305â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\241â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\257â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\224â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\336â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\245â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\372â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\202â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\5â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\16â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\305â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\212â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\366â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\277â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\313â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: stray â€˜\316â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:5:1: error: missing terminating ' character
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\222â€™ in program
+ ÙÅ‚:|Ÿ…‡>„™hf4²#u©?sxÈ?ğ­&‘Ğ˜õ¥Y–®FÛSB¬‰»¯(*CK\¹â^ƒ(1l¼ 8Ş4OÒj½uÍß“‰ÆyYóÄ±–×Ë5VqäNó+§û½5ş—c€™(~:G Ù–×ê¨_½B™]®\<#šàìE?ÍN†].ı~ùC.Ó«<Jô·4O[1fÿŞú ö·×Ï ¨¿Ä>ÇAGÍØSöĞ—ñq}Pi¼îÊü4DÁEÁ;D?ÀñâüãiÈeH¸¥7wíæ“±ã:´«Lq4fâ«LÈh’óÛwšå¹‘¥&\ÖFÙ¾€pæ©êêF¿°,BëÛ‘¾CÉöoŒj·× †İ7ˆÈÂT¥†ìD*¿d{ïG»büÉ`êDò1w‰È†”TİÔ É·ipœNwÅ°?¡éÃË$¤hÃç)qiĞ­ëÄ+öé„Ñ MB–â¡êÔlå·Ãà*”@I=®›!ºX^UÜ‚ouâRÜ­*šVÎ´À¨¼¹È‡y“wç†ğsÚßpäQY7X­·QL.VÁ ¦ Ï_K.ùİ{N«„ª4áı™œø®Ø.×É‡áö4±²”¨gÃİ²}ÓÔ®˜óåò}u0 ]¯Æã‰üÁ†ÍÖ‹“X9êœ†%ˆ™Ìf=¹g{û7xK†8ì­1ÙË„»¸LÓ¹ÜJŠÅ2®ñ•I\>ı½’pi$¿ #›}!›>ôjÑ^Œ–ˆÖ*21IëÈ±Ä‘Ç6IoáEæ+®şªQ(ùŒhÍnx:
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\237â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\370â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\312â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\370â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\273â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\375â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\362â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\262â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\263â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\352â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\312â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\235â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\301â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\377â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\307â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\357â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\25â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\316â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: stray â€˜\374â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:6:1: error: missing terminating " character
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\333â€™ in program
+ SíƒÖ†¯²Cø Ü §)?ŸÏ™úªP9‰!ÂzğtñJ_ÓÿyÉ§· ,;~­Øş{ø·×È¯ÒwÆJUŒ.àuÛ)…ş”
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\202â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\312â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\334â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\27â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\336â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\250â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\324â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\307â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\367â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\275â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\233â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\221â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\34â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\37â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\307â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\343â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\224â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\352â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\237â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\240â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\330â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\35â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\201â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:1: error: stray â€˜\200â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:7:37: error: invalid suffix "pz" on integer constant
+ SíƒÖ†¯²Cø Ü §)?ŸÏ™úªP9‰!ÂzğtñJ_ÓÿyÉ§· ,;~­Øş{ø·×È¯ÒwÆJUŒ.àuÛ)…ş”
+                                     ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\255â€™ in program
+ Vp×©ü&ñtç':èÚÀÁ·&7VËäH5¿£×·í2¨¯ZGÅÏ%¸\µÉˆY  n³ïóûhr{á`à…“#¾ìĞCÀoéå{µˆıë¹ÇE«\?ø
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\276â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\356â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\202â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\340â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\25â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\303â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\364â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:13: error: stray â€˜#â€™ in program
+ Vp×©ü&ñtç':èÚÀÁ·&7VËäH5¿£×·í2¨¯ZGÅÏ%¸\µÉˆY  n³ïóûhr{á`à…“#¾ìĞCÀoéå{µˆıë¹ÇE«\?ø
+             ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\250â€™ in program
+ Vp×©ü&ñtç':èÚÀÁ·&7VËäH5¿£×·í2¨¯ZGÅÏ%¸\µÉˆY  n³ïóûhr{á`à…“#¾ìĞCÀoéå{µˆıë¹ÇE«\?ø
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\210â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\251â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\344â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\362â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\360â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\377â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\243â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\350â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\201â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\237â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\226â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\317â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\260â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\360â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\366â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\266â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\231â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\263â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\300â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\335â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\314â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\236â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\270â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\323â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\206â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\346â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\210â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\276â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\272â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\261â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\22â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\34â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\35â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:59: error: stray â€˜@â€™ in program
+ Vp×©ü&ñtç':èÚÀÁ·&7VËäH5¿£×·í2¨¯ZGÅÏ%¸\µÉˆY  n³ïóûhr{á`à…“#¾ìĞCÀoéå{µˆıë¹ÇE«\?ø
+                                                           ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\350â€™ in program
+ Vp×©ü&ñtç':èÚÀÁ·&7VËäH5¿£×·í2¨¯ZGÅÏ%¸\µÉˆY  n³ïóûhr{á`à…“#¾ìĞCÀoéå{µˆıë¹ÇE«\?ø
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\211â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\255â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\340â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\271â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\202â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\303â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\236â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\23â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\272â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\213â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\307â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\20â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\322â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\313â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\322â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\206â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\31â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\211â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\220â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\212â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\264â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\24â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\373â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\33â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\37â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\323â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\360â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\260â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\331â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\207â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\313â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\272â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\243â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\26â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\327â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\263â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\213â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\23â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\212â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\376â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\211â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\273â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\275â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\16â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\30â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:127: error: stray â€˜@â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\277â€™ in program
+ Vp×©ü&ñtç':èÚÀÁ·&7VËäH5¿£×·í2¨¯ZGÅÏ%¸\µÉˆY  n³ïóûhr{á`à…“#¾ìĞCÀoéå{µˆıë¹ÇE«\?ø
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\247â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\300â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜`â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\274â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\23â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\233â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:144: error: stray â€˜#â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\227â€™ in program
+ Vp×©ü&ñtç':èÚÀÁ·&7VËäH5¿£×·í2¨¯ZGÅÏ%¸\µÉˆY  n³ïóûhr{á`à…“#¾ìĞCÀoéå{µˆıë¹ÇE«\?ø
+ ^
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\351â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\315â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\27â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\337â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\310â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\214â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\235â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\10â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\352â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\323â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\261â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\304â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\203â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\300â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\370â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\350â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\246â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\356â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\356â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\363â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\217â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\212â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:8:1: error: stray â€˜\210â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\26â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\337â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\204â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\335â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\204â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\30â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\270â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\271â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\27â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\271â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\205â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\256â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:18: error: stray â€˜#â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\217â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\235â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\232â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\231â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\354â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\4â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\335â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\325â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\364â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\374â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\323â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\253â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\210â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\261â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\372â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\24â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\24â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\1â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\34â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\37â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:51: error: invalid suffix "y" on integer constant
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\266â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\10â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\336â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\33â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\273â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\24â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\271â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\267â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\204â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\212â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\372â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\320â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\326â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\202â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\22â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\312â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\315â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\342â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\332â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\352â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\376â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\335â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: stray â€˜\2â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:9:1: error: missing terminating " character
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\361â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\353â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\255â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\256â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\203â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\307â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\323â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\217â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\22â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\334â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\322â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\321â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\203â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\354â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\372â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\373â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\240â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\25â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\321â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\365â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\355â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\333â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\320â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\205â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\350â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\202â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\241â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\25â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\200â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\360â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\301â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\310â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\270â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\267â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\273â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\361â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\200â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\356â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\30â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\225â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\7â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\251â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\3â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\364â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\326â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\234â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\20â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\211â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜`â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\301â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: stray â€˜\21â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:10:1: error: missing terminating " character
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\26â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\337â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\351â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\252â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\355â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\321â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\364â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\304â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\274â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\301â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\17â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\273â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\25â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\315â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\245â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\353â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\257â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\341â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\276â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:11:1: error: stray â€˜\31â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\235â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\22â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\213â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\207â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\322â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\355â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\236â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\345â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\202â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\27â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\355â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\373â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\202â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\302â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\22â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\327â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\356â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\201â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\1â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\373â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\323â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\240â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\305â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜`â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\21â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\215â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\234â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\16â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\306â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\375â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\274â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\230â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\243â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\2â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\326â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\261â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\356â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\230â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\255â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\357â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\273â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\360â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\371â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\272â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\364â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\221â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\17â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\233â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\226â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\322â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\266â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\341â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\263â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\266â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\330â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\240â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\306â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\230â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\313â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\310â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\274â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\332â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\225â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\375â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\304â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\270â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\371â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\374â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:92: error: invalid suffix "DFu" on integer constant
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\22â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\35â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\27â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\346â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\335â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\342â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\211â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\251â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\233â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\323â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:12:1: error: stray â€˜\237â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\331â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\305â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\202â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\235â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\237â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\205â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\207â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\10â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\204â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\231â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\236â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\262â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:19: error: stray â€˜#â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\22â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\24â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\251â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\21â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\2â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\310â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\360â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\255â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\221â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\320â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\230â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\365â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\245â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\226â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\256â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\333â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\10â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\220â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\254â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\25â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\211â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\273â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:13:1: error: stray â€˜\257â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:14:1: error: stray â€˜\â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:14:1: error: stray â€˜\177â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:14:1: error: stray â€˜\271â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:14:1: error: stray â€˜\342â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:15:1: error: stray â€˜\203â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:15:1: error: stray â€˜\274â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:15:1: error: stray â€˜\22â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\336â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:3: error: invalid suffix "O" on integer constant
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\322â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\275â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\315â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\27â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\337â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\223â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\211â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\306â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\177â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\20â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\6â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\363â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\304â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\261â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\226â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\327â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\313â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\4â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\344â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\363â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\247â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\373â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\275â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\30â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\376â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\227â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\200â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\231â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\331â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\16â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\226â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\327â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\220â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\3â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\352â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\250â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\275â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\231â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\256â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:65: error: stray â€˜#â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\217â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\235â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\232â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\340â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\354â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\315â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\206â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\375â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\371â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\32â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\323â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\253â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\217â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\364â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\267â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\30â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\21â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:98: error: invalid suffix "f" on integer constant
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\377â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\2â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\336â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\31â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\372â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\10â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\5â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\366â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\267â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\327â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\317â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\240â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\250â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\277â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\304â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\22â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\307â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\315â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\30â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\330â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\366â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\320â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\227â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\361â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\37â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\274â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\356â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\312â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\374â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:139: error: invalid suffix "D" on integer constant
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\301â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\301â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\300â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\361â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\342â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\374â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\343â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\310â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\270â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\245â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:158: error: invalid suffix "w" on integer constant
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\355â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\346â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\223â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\261â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\343â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\264â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\253â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\342â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\253â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\310â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\37â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\222â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\363â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\333â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\5â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\232â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\21â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\345â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\271â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\221â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\245â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\17â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\21â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\326â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\331â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\276â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\200â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\346â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\251â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\352â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\26â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\352â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\277â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\260â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\353â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\333â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\221â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\276â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\311â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\366â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\214â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\20â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\267â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\327â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\206â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\335â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\210â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\310â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\302â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\245â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\26â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\17â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\206â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\354â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\25â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\277â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\20â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\357â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\273â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\374â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\311â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜`â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\21â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\352â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\362â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:253: error: invalid suffix "w" on integer constant
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\2â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\211â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\310â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\206â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\224â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\335â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\324â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\217â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\240â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\311â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\267â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\201â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\234â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\305â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\260â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\241â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\351â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\303â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\313â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\244â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\215â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\303â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\347â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\320â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\255â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\353â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\304â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\366â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\217â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\351â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\204â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\321â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\226â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\342â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\241â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\352â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\324â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\345â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\34â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\267â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\303â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\340â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\10â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\224â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:316: error: stray â€˜@â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\256â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\233â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\272â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\215â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\334â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\202â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\30â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\5â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\342â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\334â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\255â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\232â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\30â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\316â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\264â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\300â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\250â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\34â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\274â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\271â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\310â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\207â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\34â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\223â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\347â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\206â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\34â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\360â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\332â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\337â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\344â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\255â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\267â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\236â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\301â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\215â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\246â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\317â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\371â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\335â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\253â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\204â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\252â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\341â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\375â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\231â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\234â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\370â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\256â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\330â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\24â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\235â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\327â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\311â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\207â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\341â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\366â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\261â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\235â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\262â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\224â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\250â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\303â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\335â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\262â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\323â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\324â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\256â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\230â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\363â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\345â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\362â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\31â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\3â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\20â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\257â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\306â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\343â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\211â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\374â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\34â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\301â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\206â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\315â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\10â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\326â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\213â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\223â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\235â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\352â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\234â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\206â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\16â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\210â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\231â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\314â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\33â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\271â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\26â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\25â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\373â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\16â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\25â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\206â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\354â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\255â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\331â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\313â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\204â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\273â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\270â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\323â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\271â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\23â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\334â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\23â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\212â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\26â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\305â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\256â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\361â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\225â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\10â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\5â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\37â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\36â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\375â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\275â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\37â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\6â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\222â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\277â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\30â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\20â€™ in program
+In file included from <command-line>:0:0:
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:513: error: stray â€˜#â€™ in program
+In file included from <command-line>:0:0:
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\233â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\233â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\364â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\321â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\214â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\226â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\210â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\326â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\20â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\353â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\310â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\261â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\304â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\221â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\307â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\5â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\341â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\346â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\256â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\376â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\252â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\371â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\214â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\235â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:16:1: error: stray â€˜\315â€™ in program
+In file included from <command-line>:0:0:
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\355â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\23â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\203â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\326â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\206â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\32â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\257â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\262â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\370â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\334â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\247â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\31â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\237â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\317â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\231â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\372â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\252â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\211â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\302â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\24â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\360â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\361â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\20â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\323â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\377â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\17â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\311â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\247â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\267â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\20â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:17:1: error: stray â€˜\35â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\34â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\30â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\255â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\7â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\330â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\376â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\17â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\26â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\370â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\267â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\327â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\310â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\257â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\220â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\215â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\322â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\34â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\306â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\214â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\340â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\333â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\205â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\376â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\224â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\22â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:18:1: error: stray â€˜\17â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:19:1: error: stray â€˜\327â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:19:1: error: stray â€˜\251â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:19:1: error: stray â€˜\216â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:19:1: error: stray â€˜\374â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:20:1: error: stray â€˜\361â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:20:1: error: stray â€˜\347â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:20:1: error: stray â€˜\24â€™ in program
+/usr/local/oecore-x86_64/sysroots/armv7at2hf-neon-oe-linux-gnueabi/usr/include/stdc-predef.h:20:1: error: missing terminating ' character
+CMakeFiles/cmTC_46c1b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_46c1b.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_46c1b.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/home/vip/mqtt/mqttclient-master/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_46c1b/fast' failed
+make: *** [cmTC_46c1b/fast] Error 2
+
+

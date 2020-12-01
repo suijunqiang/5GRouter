@@ -1,0 +1,2 @@
+/home/sui/sdx55-sdk-installed/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ar qc ../build/lib/libcommon.a  CMakeFiles/common.dir/mqtt_list.c.o CMakeFiles/common.dir/random.c.o
+/home/sui/sdx55-sdk-installed/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ranlib ../build/lib/libcommon.a

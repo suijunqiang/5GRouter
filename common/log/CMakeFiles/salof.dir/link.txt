@@ -1,0 +1,2 @@
+/home/sui/sdx55-sdk-installed/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ar qc ../../build/lib/libsalof.a  CMakeFiles/salof.dir/fifo.c.o CMakeFiles/salof.dir/format.c.o CMakeFiles/salof.dir/salof.c.o
+/home/sui/sdx55-sdk-installed/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ranlib ../../build/lib/libsalof.a
