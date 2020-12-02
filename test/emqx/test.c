@@ -83,6 +83,7 @@ int curl_post_get(char *send_data, char *url, struct string *result)
 		curl_easy_setopt(curl, CURLOPT_URL, url);				  //url地址
 		curl_easy_setopt(curl, CURLOPT_POSTFIELDS, send_data);	  //post参数
 		curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, writefunc); //对返回的数据进行操作的函数地址
+		//curl_easy_setopt(curl, CURLOPT_WRITEDATA, &s);		  //这是write_data的第四个参数值
 		curl_easy_setopt(curl, CURLOPT_WRITEDATA, result);		  //这是write_data的第四个参数值
 		curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "POST");
 		curl_easy_setopt(curl, CURLOPT_POST, 1); //设置问非0表示本次操作为post
@@ -157,28 +158,22 @@ securitykey\":\"12345678\",\"securitymode\":4,\"broadcast\":1,\"freqband\":1,
 \"band\":1,\"bandwidth\":0,\"channel\":0,\"mode\":6,\"maxuser\":16,\"sleeptime
 \":0}]}");
 #endif
-	struct string *result;
-	init_string(result);
+	struct string result;
+	init_string(&result);
 
 	printf("SJQ:%s\n\r", strcat(tmp_url, local_ip));
 	printf("SJQ:%s\n\r", strcat(tmp_url, login_url));
 	printf("SJQ: tmp_url:%s\n\r", tmp_url);
-	curl_post_get("{\"password\":\"21232f297a57a5a743894a0e4a801fc3\",\"username\":\"21232f297a57a5a743894a0e4a801fc3\"}", tmp_url, result);
+	curl_post_get("{\"password\":\"21232f297a57a5a743894a0e4a801fc3\",\"username\":\"21232f297a57a5a743894a0e4a801fc3\"}", tmp_url, &result);
 	printf("SJQ: result:%s\n\r", result.ptr);
 	memset(tmp_url, 0, sizeof(tmp_url));
 	printf("SJQ:%s\n\r", strcat(tmp_url, local_ip));
 	printf("SJQ:%s\n\r", strcat(tmp_url, login_status_url));
-	memset(result, 0, sizeof(result));
-	curl_post_get("", tmp_url, result);
+	memset(&result, 0, sizeof(result));
+	curl_post_get("", tmp_url, &result);
 	printf("SJQ: result:%s\n\r", result.ptr);
-	memset(tmp_url, 0, sizeof(tmp_url));
-	printf("SJQ:%s\n\r", strcat(tmp_url, local_ip));
-	printf("SJQ:%s\n\r", strcat(tmp_url, get_default_lang));
-	memset(result, 0, sizeof(result));
-	curl_post_get("", tmp_url, result);
-	printf("SJQ: result:%s\n\r", result.ptr);
-
-	sleep(2);
+	
+  sleep(2);
 
 	mqtt_list_subscribe_topic(client);
 
@@ -187,9 +182,16 @@ securitykey\":\"12345678\",\"securitymode\":4,\"broadcast\":1,\"freqband\":1,
 	while (1)
 	{
 		//sprintf(buf, "test mqtt-www - publish test  \"broadcast\":1  a rand number: %d ...", random_number());
-		sprintf(buf, "{\"retcode\":0,\"status\":1,\"wifiList\":[{\"ssidstatus\":1,\"ssid\":\"5G-Box-2G-75E8\",\"securitykey\":\"12345678\",\"securitymode\":0,\"broadcast\":1,\"freqband\":0,\"band\":0,\"bandwidth\":0,\"channel\":0,\"mode\":6,\"maxuser\": 16,\"sleeptime\":0},{\"ssidstatus\":1,\"ssid\":\"5G-Box-5G-75E9\",\"securitykey\":\"12345678\",\"securitymode\":4,\"broadcast\":1,\"freqband\":1,\"band\":1,\"bandwidth\":0,\"channel\":0,\"mode\":6,\"maxuser\":16,\"sleeptime \":0}]}");
+//		sprintf(buf, "{\"retcode\":0,\"status\":1,\"wifiList\":[{\"ssidstatus\":1,\"ssid\":\"5G-Box-2G-75E8\",\"securitykey\":\"12345678\",\"securitymode\":0,\"broadcast\":1,\"freqband\":0,\"band\":0,\"bandwidth\":0,\"channel\":0,\"mode\":6,\"maxuser\": 16,\"sleeptime\":0},{\"ssidstatus\":1,\"ssid\":\"5G-Box-5G-75E9\",\"securitykey\":\"12345678\",\"securitymode\":4,\"broadcast\":1,\"freqband\":1,\"band\":1,\"bandwidth\":0,\"channel\":0,\"mode\":6,\"maxuser\":16,\"sleeptime \":0}]}");
 		//sprintf(buf, "{\"retcode\":0,\"sleeptime \":0}]}");
+memset(tmp_url, 0, sizeof(tmp_url));
+	printf("SJQ:%s\n\r", strcat(tmp_url, local_ip));
+	printf("SJQ:%s\n\r", strcat(tmp_url, get_default_lang));
+	memset(&result, 0, sizeof(result));
+	curl_post_get("", tmp_url, &result);
+	printf("SJQ: result:%s\n\r", result.ptr);
 
+    sprintf(buf, result.ptr);
 		msg.qos = 0;
 		mqtt_publish(client, "message", &msg);
 
@@ -202,7 +204,7 @@ securitykey\":\"12345678\",\"securitymode\":4,\"broadcast\":1,\"freqband\":1,
 		sleep(4);
 	}
 
-	free(result);
+	free(&result);
 }
 
 int main(void)
