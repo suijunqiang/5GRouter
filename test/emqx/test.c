@@ -186,7 +186,7 @@ securitykey\":\"12345678\",\"securitymode\":4,\"broadcast\":1,\"freqband\":1,
 		//sprintf(buf, "{\"retcode\":0,\"sleeptime \":0}]}");
 memset(tmp_url, 0, sizeof(tmp_url));
 	printf("SJQ:%s\n\r", strcat(tmp_url, local_ip));
-	printf("SJQ:%s\n\r", strcat(tmp_url, get_default_lang));
+	printf("SJQ:%s\n\r", strcat(tmp_url, get_sim_info));
 	memset(&result, 0, sizeof(result));
 	curl_post_get("", tmp_url, &result);
 	printf("SJQ: result:%s\n\r", result.ptr);
