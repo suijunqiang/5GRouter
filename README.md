@@ -30,4 +30,4 @@
         set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS} -O0 -g -ggdb")
         set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS} -O3")
     endif(CMAKE_COMPILER_IS_GNUCXX)
-
+4, make
