@@ -18,6 +18,9 @@
 #include <curl/curl.h>
 #include "url_list.h"
 
+//#define COOKIES
+#define HEGE_MQTT
+
 typedef enum
 {
 	RES_SUCCESS,
@@ -88,12 +91,15 @@ int curl_post_get(char *send_data, char *url, struct string *result)
 		curl_easy_setopt(curl, CURLOPT_HEADER, 1); //将响应头信息和相应体一起传给write_data
 		curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1); //设置为非0,响应头信息location
 		curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
+#ifdef COOKIES
 		curl_easy_setopt(curl, CURLOPT_COOKIEFILE, "/data/5GCookies");
+#endif
 		curl_easy_setopt(curl, CURLOPT_NOSIGNAL, 1L);
 		curl_easy_setopt(curl, CURLOPT_FORBID_REUSE, 1);
 		curl_easy_setopt(curl, CURLOPT_TIMEOUT, 5L);
-
-	  curl_easy_setopt(curl, CURLOPT_COOKIE,"192.168.1.1 FALSE / FALSE 0 -goahead-session- ::webs.session::14a83116a9f2f65b07f0c210a6a55c04");
+#ifdef COOKIES
+	  curl_easy_setopt(curl, CURLOPT_COOKIE,"webs.session::fe58a36aa4e4e0712de662e59c368fa4");
+	  //curl_easy_setopt(curl, CURLOPT_COOKIE,"192.168.1.1 FALSE / FALSE 0 -goahead-session- ::webs.session::14a83116a9f2f65b07f0c210a6a55c04");
 	  //curl_easy_setopt(curl, CURLOPT_COOKIE,"-goahead-session- ::webs.session::14a83116a9f2f65b07f0c210a6a55c04");
 
 		struct curl_slist *cookies = NULL;
@@ -103,6 +109,7 @@ int curl_post_get(char *send_data, char *url, struct string *result)
 		}else{
       printf("SJQ: cookies NULL\r\n"); 
 		}
+#endif //end of COOKIES
 
 		res = curl_easy_perform(curl);
 
@@ -120,6 +127,7 @@ int curl_post_get(char *send_data, char *url, struct string *result)
 			case CURLE_HTTP_RETURNED_ERROR:
 				printf("%s http return failed", "FAIL");
 				break;
+				break;
 			case CURLE_READ_ERROR:
 				printf("%s read local file failed", "FAIL");
 				break;
@@ -131,6 +139,7 @@ int curl_post_get(char *send_data, char *url, struct string *result)
 			iRet = RES_FAIL;
 		} else {
 			iRet = RES_SUCCESS;
+#ifdef COOKIES
 		 if(strstr(url,"goform/login")){ 
 				curl_easy_getinfo(curl,CURLINFO_COOKIELIST,&cookies);
 				int i=1;
@@ -142,6 +151,7 @@ int curl_post_get(char *send_data, char *url, struct string *result)
 					}
 				
 			}
+#endif //end of COOKIES
 		
 		}//end of  (res != CURLE_OK) 
 		curl_easy_cleanup(curl);
@@ -220,7 +230,6 @@ securitykey\":\"12345678\",\"securitymode\":4,\"broadcast\":1,\"freqband\":1,
 
 	while (1)
 	{
-		//sprintf(buf, "test mqtt-www - publish test  \"broadcast\":1  a rand number: %d ...", random_number());
     sprintf(buf, "{\"retcode\":0,\"status\":1,\"wifiList\":[{\"ssidstatus\":1,\"ssid\":\"5G-Box-2G-75E8\",\"securitykey\":\"12345678\",\"securitymode\":0,\"broadcast\":1,\"freqband\":0,\"band\":0,\"bandwidth\":0,\"channel\":0,\"mode\":6,\"maxuser\": 16,\"sleeptime\":0},{\"ssidstatus\":1,\"ssid\":\"5G-Box-5G-75E9\",\"securitykey\":\"12345678\",\"securitymode\":4,\"broadcast\":1,\"freqband\":1,\"band\":1,\"bandwidth\":0,\"channel\":0,\"mode\":6,\"maxuser\":16,\"sleeptime \":0}]}");
 		//sprintf(buf, "{\"retcode\":0,\"sleeptime \":0}]}");
 		/*
@@ -268,15 +277,28 @@ int main(void)
 	mqtt_set_port(client, "8883");
 	mqtt_set_ca(client, (char *)test_ca_get());
 #else
+#ifdef HEGE_MQTT
 	mqtt_set_port(client, "1883");
+#else
+	mqtt_set_port(client, "1883"); 
+#endif // end of HEGE_MQTT
 #endif
 
 	//mqtt_set_host(client, "www.jiejie01.top");
+#ifdef HEGE_MQTT
+	mqtt_set_host(client, "124.71.182.225");
+	mqtt_set_client_id(client, random_string(10));
+	mqtt_set_user_name(client, "fdjafjkdjfrl");
+	mqtt_set_password(client, "fdjafjkdjfrl");
+	mqtt_set_clean_session(client, 1);
+#else
 	mqtt_set_host(client, "suijunqiang.top");
 	mqtt_set_client_id(client, random_string(10));
 	mqtt_set_user_name(client, random_string(10));
 	mqtt_set_password(client, random_string(10));
 	mqtt_set_clean_session(client, 1);
+
+#endif // end of HEGE_MQTT
 
 	mqtt_connect(client);
 
