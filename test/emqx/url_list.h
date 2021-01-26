@@ -1,5 +1,7 @@
 #ifndef URL_LIST
 #define URL_LIST
+#include <stdio.h>
+
 
 //basic APIs
 char local_ip[]                     = "http://192.168.1.1/";
@@ -39,7 +41,30 @@ char reboot[]                       = "action/reboot";
 char reset[]                        = "action/reset";
 char get_system_status[]            = "goform/GetSystemStatus";
 char modify_user_name[]             = "goform/ModifyUsername";
-char get_statistics_info[]          = "action/GetStatis";
+char get_statistics_info[]          = "action/GetStatisticsInfo";
+char get_statistics_config[]        = "action/GetStatisticsConfig";
+
+//Router APIs
+char get_firewall_cfg[]             = "action/GetFirewallCfg";
+char set_firewall_cfg[]             = "action/SetFirewallCfg";
+char get_lan_ip_filterCfg[]         = "action/GetLanIpFilterCfg";
+char set_lan_ip_filterCfg[]         = "action/SetLanIpFilterCfg";
+char get_mac_filterCfg[]            = "action/GetMacFilterCfg";
+char set_mac_filterCfg[]            = "action/SetMacFilterCfg";
+
+char * get_lang();
+
+
+char * get_lang(void){ 
+	char tmp_url[150] = {0};
+	memset(tmp_url, 0, sizeof(tmp_url));
+  printf("SJQ:%s\n\r", strcat(tmp_url, local_ip));
+  printf("SJQ:%s\n\r", strcat(tmp_url, get_default_lang));
+  	
+	return tmp_url;
+}
+
+
 
 
 #endif //URL_LIST
