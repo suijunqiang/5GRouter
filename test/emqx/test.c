@@ -17,13 +17,18 @@
 //curl to get/send gatway info
 #include <curl/curl.h>
 #include "url_list.h"
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <sys/ioctl.h>
+#include <net/if.h>        //for struct ifreq
+#include <regex.h>
 
-
-#include "./cJSON/cJSON.h"
-#include "./cJSON/cJSON_Utils.h"
+//#include "cJSON/cJSON.h"
+//#include "cJSON.h"
 
 //#define COOKIES
 #define HEGE_MQTT
+//#define IMSI
 
 typedef enum
 {
@@ -269,6 +274,26 @@ securitykey\":\"12345678\",\"securitymode\":4,\"broadcast\":1,\"freqband\":1,
   printf("SJQ:%s\n\r", strcat(tmp_url, get_sim_info));
   memset(&result, 0, sizeof(result));
   curl_post_get("", tmp_url, &result);
+
+#ifdef IMSI
+	cJSON *json = cJSON_CreateObject();
+	cJSON *item = NULL;
+	json = cJSON_Parse(result.ptr);
+	item = cJSON_CreateObject();
+	item = cJSON_GetObjectItem(json, "imsi");
+
+	if(item != NULL){ 
+		printf("SJQ: json imsi: %s\n\r", item);
+		//write imsi into a file
+		//it will be read in the process of wifidog
+		char str[100];
+		sprintf(str, "echo %s >/data/imsi", item);
+		system(str); 
+	}else{
+		printf("SJQ: the item is NULL:\n\r"); 
+	}
+#endif //IMSI
+
   printf("SJQ: URL: %s, result:%d \n\r", tmp_url,result.len);
   if (result.len < 1000)
   {
@@ -309,6 +334,18 @@ securitykey\":\"12345678\",\"securitymode\":4,\"broadcast\":1,\"freqband\":1,
 		mqtt_publish(client, "hege_hangzhou", &msg);
     printf("SJQ: result:%s\n\r", result.ptr);
 	
+
+#if 0
+
+    printf("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\r");
+		msg.qos = 0;
+
+		mqtt_publish(client, "hege_hangzhou", "{\"retcode\":0,\"status\":1,\"version\":\"v0.01\"}");
+ 
+    printf("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\r");
+
+#endif
+
 		memset(tmp_url, 0, sizeof(tmp_url));
   	printf("SJQ:%s\n\r", strcat(tmp_url, local_ip));
   	printf("SJQ:%s\n\r", strcat(tmp_url, get_sim_WirelessNetworkInfo));
@@ -500,7 +537,48 @@ securitykey\":\"12345678\",\"securitymode\":4,\"broadcast\":1,\"freqband\":1,
 
 	free(&result);
 }
+static inline void get_cpuid(unsigned int i, unsigned int * buf)
+{
+   unsigned int eax,ebx,ecx,edx;
+   __asm__ (
+			     "cpuid"
+					     :"=a"(eax),"=b"(ebx),"=c"(ecx),"=d"(edx):"a"(i));
+	     buf[0]=eax;
+			     buf[1]=ebx;
+					     buf[2]=edx;
+							     buf[3]=ecx;
+}
+static inline void native_cpuid(unsigned int *eax, unsigned int *ebx,
+                                unsigned int *ecx, unsigned int *edx)
+{
+        /* ecx is often an input as well as an output. */
+         __asm__ __volatile__("cpuid"
+            : "=a" (*eax),
+              "=b" (*ebx),
+              "=c" (*ecx),
+              "=d" (*edx)
+            : "0" (*eax), "2" (*ecx));
+}
+int get_mac(char * mac, int len_limit)    //返回值是实际写入char * mac的字符个数（不包括'\0'）
+{
+    struct ifreq ifreq;
+    int sock;
 
+    if ((sock = socket (AF_INET, SOCK_STREAM, 0)) < 0)
+			    {
+					        perror ("socket");
+									        return -1;
+													    }
+		    strcpy (ifreq.ifr_name, "eth0");    //Currently, only get eth0
+				
+				    if (ioctl (sock, SIOCGIFHWADDR, &ifreq) < 0)
+							    {
+									        perror ("ioctl");
+													        return -1;
+																	    }
+						    
+		return snprintf (mac, len_limit, "%X-%X-%X-%X-%X-%X", (unsigned char) ifreq.ifr_hwaddr.sa_data[0], (unsigned char) ifreq.ifr_hwaddr.sa_data[1], (unsigned char) ifreq.ifr_hwaddr.sa_data[2], (unsigned char) ifreq.ifr_hwaddr.sa_data[3], (unsigned char) ifreq.ifr_hwaddr.sa_data[4], (unsigned char) ifreq.ifr_hwaddr.sa_data[5]);
+}
 int main(void)
 {
 	int res;
@@ -535,6 +613,89 @@ int main(void)
 	mqtt_set_user_name(client, "admin");
 	mqtt_set_password(client, "public");
 	mqtt_set_clean_session(client, 1);
+
+
+
+
+
+
+
+
+
+
+  printf("===============================================================\n");
+  printf("===============================================================\n");
+  printf("===============================================================\n");
+
+
+
+
+  printf("===============================================================\n");
+
+
+    char buffer[512];
+
+    FILE *fp;
+    fp = popen("cat /data/imei.txt", "r");
+    if (fp == NULL){
+        printf("open error");
+    }
+
+    char *output = fgets(buffer,sizeof(buffer),fp);
+    if(output == NULL){
+        printf("read error"); 
+    }
+    printf("output:%s\n",output);
+    pclose(fp);
+
+    regmatch_t matches[2];
+    regex_t re;
+    regcomp(&re, "\"imei\":\"([^\"]*)\"", REG_EXTENDED|REG_ICASE);
+    int i = regexec(&re, output,
+            sizeof(matches)/sizeof(matches[0]),
+            (regmatch_t*)&matches,0);
+
+		char *imei;
+    if(! i ) {
+        imei= strndup(output+matches[1].rm_so, matches[1].rm_eo - matches[1].rm_so);
+        printf("got imei:%s\n",imei);
+    }
+
+#if 0	
+ unsigned eax, ebx, ecx, edx;
+
+  eax = 1; /* processor info and feature bits */
+  native_cpuid(&eax, &ebx, &ecx, &edx);
+
+  printf("stepping %d\n", eax & 0xF);
+  printf("model %d\n", (eax >> 4) & 0xF);
+  printf("family %d\n", (eax >> 8) & 0xF);
+  printf("processor type %d\n", (eax >> 12) & 0x3);
+  printf("extended model %d\n", (eax >> 16) & 0xF);
+  printf("extended family %d\n", (eax >> 20) & 0xFF);
+
+  /* EDIT */
+  eax = 3; /* processor serial number */
+  native_cpuid(&eax, &ebx, &ecx, &edx);
+
+  /** see the CPUID Wikipedia article on which models return the serial 
+      number in which registers. The example here is for 
+      Pentium III */
+  printf("serial number 0x%08x%08x\n", edx, ecx);
+
+	 unsigned int public[4]; 
+	    get_cpuid(0,public);
+			printf("SJQ serial number 0x%08x%08x%08x%08x\n", public);
+#endif
+
+  printf("===============================================================");
+
+
+
+
+
+
+	
 #else
 	//mqtt_set_host(client, "suijunqiang.top");
 	mqtt_set_host(client, "106.14.98.101");
@@ -543,6 +704,11 @@ int main(void)
 	mqtt_set_password(client, random_string(10));
 	mqtt_set_clean_session(client, 1);
 
+
+
+
+
+
 #endif // end of HEGE_MQTT
 
 	mqtt_connect(client);
@@ -550,10 +716,13 @@ int main(void)
 	mqtt_subscribe(client, "hege_hangzhou", QOS0, topic1_handler);
   char id[50] = {0};
 	strcat(id, "hege_hangzhou/");
-	strcat(id,client->mqtt_client_id);
-  MQTT_LOG_E("SJQ: mqtt client id:%s\r\n",client->mqtt_client_id);
+	//strcat(id,client->mqtt_client_id);
+	strcat(id,imei);
+  MQTT_LOG_E("SJQ: mqtt client id:%s\r\n",imei);
   MQTT_LOG_E("SJQ: hege id:%s\r\n",id);
 
+  free (imei);
+  regfree(&re);
 	mqtt_subscribe(client, id , QOS1, hege_id_topic_handler);
 	mqtt_subscribe(client, "topic3", QOS2, NULL);
 
